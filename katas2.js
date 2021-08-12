@@ -1,37 +1,56 @@
-// comece a criar a sua função add na linha abaixo
+
+//Esse programa faz operações matemáticas usando apenas o operador de soma.
+let soma = 0//variável para soma de valores nas funções
+ 
+//função para simar valores
+function add (soma1,soma2){
+    soma = soma1 + soma2;
+    return soma
+}  
+   
+console.log('Teste da função ADD. O RESULTADO é '+add(2,3))
+     
+// Função para multiplicar valores
+function multiply(arg1,arg2){
+       
+ soma = 0
+ for(let i = 0; i<arg2; i++){
+      soma = add(soma,arg1) 
+    }
+
+    return soma
+    
+}    
+
+console.log('Teste da função MULTIPLY. O RESULTADO é '+multiply(2,3))
+
+//Função para fazer potência de valores
+function power(arg1,arg2){
+    soma = arg1
+    
+   for(let i = 0; i<arg2-1; i++){
+       soma =multiply(soma,arg1)
+
+    } 
+    return soma 
+     
+}
+
+console.log('Teste da função power. O RESULTADO é ' +power(2,3))
 
 
-// descomente a linha seguinte para testar sua função
-// console.assert(add(3, 5) === 8, 'A função add não está funcionando como esperado');
 
 
-// comece a criar a sua função multiply na linha abaixo
+// função fatorial
+function factorial(arg1){
+    soma = 1
 
+    for(let i = 1; i<=arg1; i++){
+        soma = multiply(soma,i)
+       
+    }
+    return soma
+}
 
-// descomente a linha seguinte para testar sua função
-// console.assert(multiply(4, 6) === 24, 'A função multiply não está funcionando como esperado');
+console.log('Teste da função FACTORIAL. O RESULTADO é ' +factorial(10))
 
-
-// comece a criar a sua função power na linha abaixo
-
-
-// descomente a linha seguinte para testar sua função
-// console.assert(power(3, 4) === 81, 'A função power não está funcionando como esperado');
-
-
-// comece a criar a sua função factorial na linha abaixo
-
-
-// descomente a linha seguinte para testar sua função
-// console.assert(factorial(5) === 120, 'A função factorial não está funcionando como esperado');
-
-
-/**
- * BONUS (aviso: o grau de dificuldade é bem maior !!!)
- */
-
-// crie a função fibonacci
-
-
-// descomente a linha seguinte para testar sua função
-// console.assert(fibonacci(7) === 13, 'A função fibonacci não está funcionando como esperado');
