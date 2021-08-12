@@ -36,7 +36,7 @@ function power(arg1,arg2){
      
 }
 
-console.log('Teste da função power. O RESULTADO é ' +power(2,3))
+console.log('Teste da função POWER. O RESULTADO é ' +power(2,3))
 
 
 
